@@ -1,0 +1,19 @@
+---
+layout: "wrapper"
+author: "Sagar"
+
+---
+
+{% if page.title == "My First Blog"%}
+    This is my first blog
+{% elsif page.title == "New Title" %}
+    This is test title blog
+{% endif %}
+
+
+
+<h1>{{ page.title }}</h1>
+<h3>{{ layout.author }}</h3>
+<hr>
+
+{{ content }}
